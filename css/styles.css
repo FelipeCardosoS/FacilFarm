@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --verde-fundo: #87a500;
+    --creme: #fff4d5;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.nav-buttons li{
+    list-style-type: none;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+ul li{
+    color: var(--creme);
+    font-family: 'Rubik', 'sans-serif';
+    font-size: 2.7vmin;
+    list-style-type: square;
+}
+
+h1, h2{
+    letter-spacing: 4px;
+    font-family: 'Alata', sans-serif;
+    font-size: 5.5vmin;
+    font-weight: 600;
+    text-align: center;
+    line-height: 115%;
+    color: var(--creme);
+}
+
+h2{
+    font-size: 5vmin;
+}
+
+p{
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    color: var(--creme);
+    line-height: 130%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav{
+    position: fixed;
+    padding: 0 5%;
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--verde-fundo);
+    opacity: 90%;
+    transition: .7s;
+}
+
+nav a h1{
+    font-size: 4.5vmin;
+}
+
+.nav-buttons{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+    transition: .7s;
+}
+
+.nav-buttons a{
+    text-decoration: none;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 600;
+    font-size: 2.7vmin;
+    color: var(--creme);
+    font-weight: 100;
+    transition: .7s;
+}
+
+.nav-buttons a:hover{
+    font-size: 2.55vmin;
+}
+
+.btn{
+    font-family: 'Rubik', sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+    background-color: var(--verde-fundo);
+    border: 1.5px solid var(--creme);
+    border-radius: 50px;
+    color: white;
+    padding: 15px 55px;
+    transition: 1s;
+}
+
+.btn:hover{
+    color: var(--verde-fundo);
+    border: 1.5px solid var(--verde-fundo);
+    background-color: white;
+}
+
+
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2%;
+}
+
+.box-txt{
+    height: 100%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.box-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+    width: 37%;
+    border-radius: 40px;
+    background-color: var(--creme);
+    overflow: hidden;
+}
+
+.box-img img{
+    max-width: 100%;
+    height: auto;
+}
+
+
+.problema{
+    gap: 4%;
+}
+
+.solucao{
+    padding-top: 1%;
+    height: 40%;
+    width: 50%;
+
+}
+
+
+.txt-solucao{
+    color: var(--verde-fundo); 
+    background-color: var(--creme);
+    padding: 8.5%;
+    border-radius: 40px;
+}
+
+
+.beneficios{
+    height: 40%;
+    width: 90%;
+    flex-direction: row;
+    gap: 8%;
+}
+
+.box-beneficios{
+    margin-top: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70%;
+    width: 30%;
+    border-radius: 50px;
+    background-color: #fdfce9;
+}
+
+.box-beneficios img{
+    max-width: 100%;
+    height: 100%;
+    border-radius: 50px;
+}
+
+
+.txt-como{
+    width: 90%;
+    color: var(--verde-fundo); 
+    background-color: var(--creme);
+    padding: 5.5%;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+
+.como{
+    width: 55%;
+}
+
+.txt-como p{
+    color: var(--verde-fundo);
+    font-size: 2vmin;
+}
+
+.img-como{
+    width: 30%;
+}
+
+.arrow{
+    margin-top: 5px;
+    animation: arrow 1s infinite;
+}
+
+.time{
+    margin: auto;
+    width: 90%;
+    height: 82%;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.box-time{
+    height: 75%;
+    width: 27%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1%;
+}
+
+
+.box-time h1{
+    margin-top: 5%;
+    font-size: 30px;
+}
+
+.box-time p{
+    font-size: 25px;
+}
+
+.fundo-integrante{
+    height: 50%;
+    width: 57%;
+    background-color: white;
+    overflow: hidden;
+    border-radius: 3px;
+    border: 2px solid white;
+    transition: .5s;
+}
+
+.fundo-integrante img{
+    max-height: 100%;
+    min-width: 100%;
+}
+
+.bg-inicio{
+    background-image: linear-gradient(rgba(0, 0, 0, 0) 40%,  var(--verde-fundo) 100%), url(../images/inicio.jpg);
+    background-size: cover;
+}
+
+.bg-green{
+    background-color: var(--verde-fundo);
+}
